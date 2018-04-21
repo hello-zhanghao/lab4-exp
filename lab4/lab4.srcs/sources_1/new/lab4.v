@@ -7,12 +7,41 @@ module lab4(
 	input  `bit8 sw,
 	output `bit8 led
 	);
-	wire `bit2 fre_mode;
+	wire fre_inc;
+	wire fre_dec;
+	wire clk_N1;
+	wire clk_N2;
+	wire clk_N3;
+	wire clk_N4;
+	wire clk_N5;
+	wire clk_N6;
+	wire clk_N7;
+	wire clk_N8;
+
+clk_div myclk_div(
+    .clk(clk),
+    .clk_N1(clk_N1),
+    .clk_N2(clk_N2),
+    .clk_N3(clk_N3),
+    .clk_N4(clk_N4),
+    .clk_N5(clk_N5),
+    .clk_N6(clk_N6),
+    .clk_N7(clk_N7),
+    .clk_N8(clk_N8) 
+    );
 
 LED myled(
 	.clk(clk),
-	.fre_inc(fre_mode[0]),
-	.fre_dec(fre_mode[1]),
+	.clk_N1(clk_N1),
+    .clk_N2(clk_N2),
+    .clk_N3(clk_N3),
+    .clk_N4(clk_N4),
+    .clk_N5(clk_N5),
+    .clk_N6(clk_N6),
+    .clk_N7(clk_N7),
+    .clk_N8(clk_N8), 
+	.fre_inc(fre_inc),
+	.fre_dec(fre_dec),
 	.sw(sw),
 	.led(led)
 	);
@@ -20,12 +49,13 @@ LED myled(
 key_test mykey1(
     .clk(clk),
     .key_in(left),
-    .key_value(fre_mode[0])
+    .key_value(fre_inc)
     );
-key_test2 mykey2(
-    .clk(clk),
-    .key_in(left),
-    .key_value(fre_mode[1])
-    );
+key_test mykey2(
+        .clk(clk),
+        .key_in(right),
+        .key_value(fre_dec)
+        );
+
         	
 endmodule

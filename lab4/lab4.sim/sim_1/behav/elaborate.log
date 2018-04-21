@@ -1,0 +1,21 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 47680975e2f5479293185341900b9f6d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab4_sim_behav xil_defaultlib.lab4_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "X:/lab4-exp/lab4/lab4.srcs/sources_1/new/lab4.v" Line 3. Module lab4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "X:/lab4-exp/lab4/lab4.srcs/sources_1/new/clk_div.v" Line 2. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v" Line 3. Module LED doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v" Line 3. Module key_test doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v" Line 3. Module key_test doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.key_test
+Compiling module xil_defaultlib.lab4
+Compiling module xil_defaultlib.lab4_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab4_sim_behav

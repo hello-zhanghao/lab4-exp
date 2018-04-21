@@ -8,15 +8,10 @@
 `define bit8 [7:0]
 `define bit16 [15:0]
 `define bit18 [17:0]
+`define bit20 [19:0]
+`define bit30 [29:0]
 `define bit256 [255:0]
 
-`define reg4 [3:0]
-`define reg8 [7:0]
-`define reg16 [15:0]
-
-`define wire4 [3:0]
-`define wire8 [7:0]
-`define wire16 [15:0]
 /********************End of CommmonMacro***************************/
 
 

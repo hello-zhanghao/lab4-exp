@@ -2,54 +2,145 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Apr 18 14:51:17 2018
-# Process ID: 4880
-# Current directory: C:/Users/lenovo/Desktop/lab4/lab4.runs/synth_1
+# Start of session at: Wed Apr 18 21:57:07 2018
+# Process ID: 6180
+# Current directory: X:/lab4-exp/lab4/lab4.runs/synth_1
 # Command line: vivado.exe -log lab4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab4.tcl
-# Log file: C:/Users/lenovo/Desktop/lab4/lab4.runs/synth_1/lab4.vds
-# Journal file: C:/Users/lenovo/Desktop/lab4/lab4.runs/synth_1\vivado.jou
+# Log file: X:/lab4-exp/lab4/lab4.runs/synth_1/lab4.vds
+# Journal file: X:/lab4-exp/lab4/lab4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source lab4.tcl -notrace
-Command: synth_design -top lab4 -part xc7z020clg484-1
+Command: synth_design -top lab4 -part xc7a200tfbg676-2
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2548 
+INFO: Helper process launched with PID 3292 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 312.707 ; gain = 80.430
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 306.652 ; gain = 76.676
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab4' [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/lab4.v:3]
-INFO: [Synth 8-638] synthesizing module 'LED' [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/LED.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/LED.v:26]
-INFO: [Synth 8-256] done synthesizing module 'LED' (1#1) [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/LED.v:3]
-INFO: [Synth 8-638] synthesizing module 'key_test' [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test.v:3]
-INFO: [Synth 8-256] done synthesizing module 'key_test' (2#1) [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test.v:3]
-INFO: [Synth 8-638] synthesizing module 'key_test2' [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test2.v:3]
-INFO: [Synth 8-256] done synthesizing module 'key_test2' (3#1) [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test2.v:3]
-INFO: [Synth 8-256] done synthesizing module 'lab4' (4#1) [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/lab4.v:3]
-WARNING: [Synth 8-3331] design lab4 has unconnected port right
+INFO: [Synth 8-638] synthesizing module 'lab4' [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/lab4.v:3]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/clk_div.v:2]
+	Parameter N1 bound to: 20'b00011000011010100000 
+	Parameter N2 bound to: 20'b00110000110101000000 
+	Parameter N3 bound to: 20'b01001001001111100000 
+	Parameter N4 bound to: 20'b01100001101010000000 
+	Parameter N5 bound to: 20'b01111010000100100000 
+	Parameter N6 bound to: 20'b10010010011111000000 
+	Parameter N7 bound to: 20'b10101010111001100000 
+	Parameter N8 bound to: 20'b11000011010100000000 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/clk_div.v:2]
+INFO: [Synth 8-638] synthesizing module 'LED' [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:3]
+INFO: [Synth 8-226] default block is never used [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:45]
+INFO: [Synth 8-256] done synthesizing module 'LED' (2#1) [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:3]
+INFO: [Synth 8-638] synthesizing module 'key_test' [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v:3]
+INFO: [Synth 8-256] done synthesizing module 'key_test' (3#1) [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v:3]
+INFO: [Synth 8-256] done synthesizing module 'lab4' (4#1) [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/lab4.v:3]
+WARNING: [Synth 8-3331] design LED has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 352.035 ; gain = 119.758
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 345.977 ; gain = 116.000
 ---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 352.035 ; gain = 119.758
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 345.977 ; gain = 116.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [X:/lab4-exp/lab4/lab4.srcs/constrs_3/new/lab4_constr.xdc]
+Finished Parsing XDC File [X:/lab4-exp/lab4/lab4.srcs/constrs_3/new/lab4_constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [X:/lab4-exp/lab4/lab4.srcs/constrs_3/new/lab4_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 686.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7z020clg484-1
+Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 352.035 ; gain = 119.758
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg484-1
-WARNING: [Synth 8-6014] Unused sequential element count_fre_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/LED.v:18]
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 686.832 ; gain = 456.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_N1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_N8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'count_reg' in module 'LED'
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:45]
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "key_value" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_base_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test.v:18]
-INFO: [Synth 8-5546] ROM "key_value" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_base_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test2.v:18]
+WARNING: [Synth 8-6014] Unused sequential element cnt_base_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v:18]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:45]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:45]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+                 iSTATE5 |                              110 |                              110
+                 iSTATE6 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'count_reg' using encoding 'sequential' in module 'LED'
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'clk_fre_reg' [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v:27]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 352.035 ; gain = 119.758
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -57,27 +148,28 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 8     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 3     
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 8     
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
-+---Multipliers : 
-	                 4x32  Multipliers := 1     
+	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	  57 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -85,30 +177,32 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 8     
++---Registers : 
+	               20 Bit    Registers := 8     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
 Module LED 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Multipliers : 
-	                 4x32  Multipliers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
-Module key_test 
-Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 +---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	  57 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module key_test2 
+Module key_test 
 Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
@@ -124,25 +218,37 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 220 (col length:60)
-BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myclk_div/clk_N8" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "mykey1/key_value" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "mykey2/key_value" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element myled/count_fre_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/LED.v:18]
-WARNING: [Synth 8-6014] Unused sequential element mykey1/cnt_base_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test.v:18]
-WARNING: [Synth 8-6014] Unused sequential element mykey2/cnt_base_reg was removed.  [C:/Users/lenovo/Desktop/lab4/lab4.srcs/sources_1/new/key_test2.v:18]
-WARNING: [Synth 8-3331] design lab4 has unconnected port right
-INFO: [Synth 8-3886] merging instance 'mykey1/key_temp_reg[0]' (FD) to 'mykey2/key_temp_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mykey1/key_temp_reg[1]' (FD) to 'mykey2/key_temp_reg[1]'
+WARNING: [Synth 8-6014] Unused sequential element mykey1/cnt_base_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v:18]
+WARNING: [Synth 8-6014] Unused sequential element mykey2/cnt_base_reg was removed.  [X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v:18]
+WARNING: [Synth 8-3332] Sequential element (myled/clk_fre_reg) is unused and will be removed from module lab4.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,12 +256,17 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 686.832 ; gain = 456.855
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -167,7 +278,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -191,7 +302,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -204,7 +315,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,25 +327,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,46 +361,48 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |   162|
-|3     |LUT1   |   113|
-|4     |LUT2   |   111|
-|5     |LUT3   |   256|
-|6     |LUT4   |   184|
-|7     |LUT5   |   144|
-|8     |LUT6   |   266|
-|9     |FDRE   |   120|
-|10    |IBUF   |    10|
-|11    |OBUF   |     8|
+|1     |BUFG   |     1|
+|2     |CARRY4 |    50|
+|3     |LUT1   |   200|
+|4     |LUT2   |     5|
+|5     |LUT3   |     7|
+|6     |LUT4   |    37|
+|7     |LUT5   |    29|
+|8     |LUT6   |    71|
+|9     |MUXF7  |     3|
+|10    |MUXF8  |     1|
+|11    |FDRE   |   228|
+|12    |IBUF   |    11|
+|13    |OBUF   |     8|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+----------+------+
-|      |Instance |Module    |Cells |
-+------+---------+----------+------+
-|1     |top      |          |  1376|
-|2     |  mykey1 |key_test  |    52|
-|3     |  mykey2 |key_test2 |    56|
-|4     |  myled  |LED       |  1248|
-+------+---------+----------+------+
++------+------------+-----------+------+
+|      |Instance    |Module     |Cells |
++------+------------+-----------+------+
+|1     |top         |           |   651|
+|2     |  myclk_div |clk_div    |   461|
+|3     |  mykey1    |key_test   |    55|
+|4     |  mykey2    |key_test_0 |    54|
+|5     |  myled     |LED        |    61|
++------+------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 536.098 ; gain = 303.820
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 686.832 ; gain = 116.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 686.832 ; gain = 456.855
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'lab4' is not ideal for floorplanning, since the cellview 'LED' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-23 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+78 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 601.941 ; gain = 377.457
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/lab4/lab4.runs/synth_1/lab4.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 601.941 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 18 14:51:33 2018...
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:04 . Memory (MB): peak = 686.832 ; gain = 464.621
+INFO: [Common 17-1381] The checkpoint 'X:/lab4-exp/lab4/lab4.runs/synth_1/lab4.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 686.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 18 21:58:35 2018...

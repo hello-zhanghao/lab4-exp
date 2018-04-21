@@ -1,0 +1,11 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+X:/lab4-exp/lab4/lab4.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sim_1/new/lab4_sim.v,1524059194,verilog,,,,lab4_sim,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sources_1/new/LED.v,1524057184,verilog,,,X:/lab4-exp/lab4/lab4.srcs/sources_1/new/Macro.v,LED,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sources_1/new/Macro.v,1524057910,verilog,,,,,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sources_1/new/clk_div.v,1524058105,verilog,,,X:/lab4-exp/lab4/lab4.srcs/sources_1/new/Macro.v,clk_div,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sources_1/new/key_test.v,1524057011,verilog,,,X:/lab4-exp/lab4/lab4.srcs/sources_1/new/Macro.v,key_test,,,,,,,,
+X:/lab4-exp/lab4/lab4.srcs/sources_1/new/lab4.v,1524057986,verilog,,,X:/lab4-exp/lab4/lab4.srcs/sources_1/new/Macro.v,lab4,,,,,,,,

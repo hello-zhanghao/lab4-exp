@@ -20,9 +20,9 @@ module LED(
 	reg `bit3 fre_count=4;
 	wire key_down;
 
-assign key_down=fre_inc xor fre_dec;
+assign key_down=fre_inc ^ fre_dec;
 
-//根据寄存器值选择不同的频率
+//根据寄存器�?��?�择不同的频�?
 always @ (*) begin
 	if(fre_count==0)clk_fre <= clk_N1;
 	if(fre_count==1)clk_fre <= clk_N2;
@@ -40,7 +40,7 @@ always @ (posedge key_down) begin
 	if(fre_dec==1)fre_count <= fre_count - 1;
 end
 
-//流水等变化规律
+//流水等变化规�?
 always @ (posedge clk_fre) begin
 	case(count)
 		0:begin
